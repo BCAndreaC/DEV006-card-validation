@@ -4,11 +4,70 @@
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
+    
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
+    <header>
+      <h1>Detalles de pago</h1>
+    </header>
+    <main>
+      <section class=" imagen" id="imagen">
+        <img src="img\cosas-donar-refugio-animales-1-XxXx80.jpg" alt="imagen__perros">
+      </section>
+<form aria-required="true" action="index.html" class="validacionTC" id="validacionTC">
+
+<!--Correo electronico-->
+<section class="formulario__grupo" id="grupo__correo">
+  <label for="correo" class="formulario__label">Correo electrónico</label>
+  <article class="formulario__grupo-input">
+    <input required type="email" class="formulario__input" name="correo" id="correo" placeholder=" correo@correo.com"> 
+  </article>
+</section>
+
+<!--Nombre-->
+<section class="formulario__grupo" id="grupo__nombre">
+  <label for="nombre" class="formulario__label">Nombres y Apellidos</label>
+  <article class="formulario__grupo-input">
+    <input required type="text" class="formulario__input" name="nombre" id="nombre" placeholder=" Como aparece en la tarjeta"> 
+  </article>
+</section>
+
+<!--Numero de tarjeta-->
+<section class="formulario__grupo" id="grupo__tarjeta">
+  <label for="tarjeta" class="formulario__label">Numero de tarjeta</label>
+  <article class="formulario__grupo-input">
+    <input required type="text" maxlength="16" class="formulario__input" name="tarjeta" id="tarjeta" pattern="[0-9]*" placeholder=" xxxx xxxx xxxx xxxx "> 
+  </article>
+</section>
+
+<!--Fecha expiracion-->
+<section class="formulario__grupo" id="grupo__fecha">
+  <label for="fecha" class="formulario__label">Fecha de expiración</label>
+  <article class="formulario__grupo-input">
+    <input required type="month"  maxlength="4" class="formulario__input" name="fecha" id="fecha" min="2023-03"> 
+  </article>
+</section>
+
+<!--CVV-->
+<section class="formulario__grupo" id="grupo__cvv">
+  <label for="cvv" class="formulario__label">CVV</label>
+  <article class="formulario__grupo-input">
+    <input required maxlength="3" type="text" class="formulario__input" name="cvv" id="cvv" placeholder=" x x x " onkeypress="return event.charCode >= 48 && event.charCode <= 57"> 
+  </article>
+</section>
+
+<!--Boton donar-->
+<section class="formulario__grupo formulario__grupo-btn">
+<button type="submit" id="btn__donar" class="formulario__btn">DONAR</button>
+<p class="formulario__enviado" id="formulario__enviado">¡Tus donaciones nos ayudan a continuar nuestra labor!</p>
+</section>
+
+</form>
+    </main>
+    <footer>
+      <h1 hidden>Footer</h1>
+    </footer>
+    <script src="index.js"  type="module"></script>
   </body>
+ 
 </html>
