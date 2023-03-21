@@ -35,7 +35,6 @@ validarBtn.addEventListener("click", function () {
     alert("Por favor, complete todos los campos antes de continuar.");
     return;
   }
-
   validarTC();
 });
 
