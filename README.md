@@ -28,11 +28,11 @@ Se priorizo la seguridad del usuario enmascarando todos los digitos, exeptuando 
 
 #El proceso.
 
-	Se realizo la maquetacion de baja fidelidad teniendo en consideracion que la interfaz debe de ser muy sencilla para ayudar a agilizar la donación: 
+Se realizo la maquetacion de baja fidelidad teniendo en consideracion que la interfaz debe de ser muy sencilla para ayudar a agilizar la donación: 
 
 ![MacBook Pro 16_ - 8](https://user-images.githubusercontent.com/126895867/226696751-6cc3a650-1a10-4534-8d27-0934121c69b0.png)
 
-	En la maquetacion de alta fidelidad se determino los colores y la importacia de resaltar el boton de donación junto con un texto para impulsar la acción:
+En la maquetacion de alta fidelidad se determino los colores y la importacia de resaltar el boton de donación junto con un texto para impulsar la acción:
 
 ![MacBook Pro 16_ - 7](https://user-images.githubusercontent.com/126895867/226697622-2622d13b-d767-4fa0-b07e-d768f28e874e.png)
 
