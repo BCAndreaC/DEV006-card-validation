@@ -16,7 +16,7 @@ function validarTC() {
 
   let mensaje;
   if(valida){
-    mensaje = "Tu tarjeta " + oculta + " se ha validado, te agradecemos tu donacion!";
+    mensaje = "Tu tarjeta " + oculta + " se ha validado, muchas gracias por su donación!";
   } else {
     mensaje = "Lo sentimos tu tarjeta " + oculta + " no hemos podido validarla, por favor prueba con otra tarjeta."
   }
@@ -26,10 +26,16 @@ function validarTC() {
 const validarBtn = document.getElementById("btn__donar");
 validarBtn.addEventListener("click", function () {
   const creditCardNumber = document.getElementsByName("tarjeta")[0].value;
-  if (creditCardNumber.trim() === '') {
-    alert("Por favor, ingrese el número de su tarjeta de crédito.");
+  const name = document.getElementsByName("nombre")[0].value;
+  const email = document.getElementsByName("correo")[0].value;
+  const address = document.getElementsByName("fecha")[0].value;
+  const cvv = document.getElementsByName("cvv")[0].value;
+
+  if (creditCardNumber.trim() === '' || name.trim() === '' || email.trim() === '' || address.trim() === '' || cvv.trim()=== '') {
+    alert("Por favor, complete todos los campos antes de continuar.");
     return;
   }
+
   validarTC();
 });
 
